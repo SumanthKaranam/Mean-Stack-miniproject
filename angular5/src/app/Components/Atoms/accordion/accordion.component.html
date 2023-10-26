@@ -1,0 +1,14 @@
+<mat-accordion class="example-headers-align">
+  <mat-expansion-panel *ngFor="let list of category" multi="true">
+    <mat-expansion-panel-header (click)="filter(list)">
+      <mat-panel-title>
+        {{ list }}
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+    <p class="subc" *ngFor="let list of subcategory" (click)="subfilter(list)">
+      <mat-panel-title>
+        <mat-icon>keyboard_arrow_right</mat-icon>{{ list }}
+      </mat-panel-title>
+    </p>
+  </mat-expansion-panel>
+</mat-accordion>

@@ -1,0 +1,16 @@
+<div class="nav">
+  <input type="checkbox" id="nav-check" />
+  <div class="nav-header">
+    <div class="nav-title">Categories</div>
+  </div>
+  <div class="nav-btn">
+    <label for="nav-check">
+      <mat-icon>keyboard_arrow_down</mat-icon>
+    </label>
+  </div>
+  <div class="nav-links">
+    <li *ngFor="let list of category">
+      <a routerLink="/product-list-page" (click)="filter(list)">{{ list }}</a>
+    </li>
+  </div>
+</div>

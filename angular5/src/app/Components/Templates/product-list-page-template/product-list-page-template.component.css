@@ -1,0 +1,14 @@
+app-filter {
+  width: 25%;
+  display: inline-block;
+  flex-wrap: wrap;
+  position: fixed;
+  margin-top: 20px;
+}
+@media (max-width: 600px) {
+  app-filter {
+    margin-top: 50px;
+    width: 15%;
+  }
+}
+

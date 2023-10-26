@@ -1,0 +1,28 @@
+<div class="single-pro-details">
+  <h2>{{ products.name }}</h2>
+  <h6 class="brand">{{ products.brand }}</h6>
+  <h5>
+    Price: <strong>{{ products.price }} Points</strong>
+  </h5>
+  <h6>
+    <mat-icon class="check">check_circle</mat-icon>Item price include shipping
+    and handling
+  </h6>
+  <app-quantity-update></app-quantity-update>
+  <!-- <app-button></app-button> -->
+  <app-button (button)=" successNotification()"></app-button>
+  <h6 class="wish">
+    <i class="fa fa-heart-o" aria-hidden="true"></i>Add to wishlist
+  </h6>
+  <mat-divider></mat-divider>
+  <h6 class="Total">
+    Total: <strong class="total"> {{ total }}points</strong>
+  </h6>
+  <mat-divider></mat-divider>
+  <h6>
+    <mat-icon class="shop"> local_shipping</mat-icon>Usually ships within 7
+    business days
+  </h6>
+  <mat-divider></mat-divider>
+  <app-truncate></app-truncate>
+</div>

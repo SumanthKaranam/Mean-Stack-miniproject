@@ -1,0 +1,11 @@
+.cat {
+  height: 200px;
+  overflow: scroll;
+}
+.All {
+  cursor: pointer;
+}
+.All:hover {
+  background-color: lightgray;
+  font-weight: bolder;
+}

@@ -1,0 +1,9 @@
+<div class="sort">
+  <label for="sort">SortBy<strong>:</strong></label>
+  <select (click)="pricefilter($event)">
+    <option hidden>select</option>
+    <option *ngFor="let sort of sorting" [value]="sort.value">
+      {{ sort.name }}
+    </option>
+  </select>
+</div>

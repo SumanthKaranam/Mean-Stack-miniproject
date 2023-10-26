@@ -1,0 +1,11 @@
+<mat-card>
+  <h3>Product description</h3>
+  <mat-card-subtitle>{{ products.name }}</mat-card-subtitle>
+  <mat-card-content>`{{ products.description.slice(0, 50) }}...`</mat-card-content>
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title> see more </mat-panel-title>
+    </mat-expansion-panel-header>
+    <p>{{ products.description }}</p>
+  </mat-expansion-panel>
+</mat-card>

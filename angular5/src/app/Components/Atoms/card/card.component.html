@@ -1,0 +1,20 @@
+<body>
+  <div class="align">
+    <div
+      class="wrap"
+      *ngFor="let product of products"
+      (click)="details(product)"
+      routerLink="/product-page"
+    >
+      <i class="fa fa-heart-o" aria-hidden="true"></i>
+      <div class="product-image">
+        <img src="{{ product.image }}" alt="" />
+      </div>
+      <div class="product-info">
+        <h2>{{ product.brand }}</h2>
+        <h4>`{{ product.description.slice(0, 40) }}...`</h4>
+        <h4 class="price">{{ product.price }} Points</h4>
+      </div>
+    </div>
+  </div>
+</body>

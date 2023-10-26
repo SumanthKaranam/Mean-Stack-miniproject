@@ -1,0 +1,6 @@
+<mat-card-subtitle>Category</mat-card-subtitle>
+<div class="cat">
+  <h3 class="All" (click)="filter()">All Categories</h3>
+  <app-accordion (FilterSorting)="Filter($event)" (SubFilterSorting)="subfilter($event)" [category]="category" [subcategory]="subcategory"></app-accordion>
+</div>
+<mat-divider></mat-divider>

@@ -1,0 +1,57 @@
+.single-pro-details h4 {
+  padding: 20px 0 20px 0;
+}
+.single-pro-details span {
+  line-height: 25px;
+}
+.single-pro-details{
+  width: 60%;
+}
+h4 {
+  font-size: 20px;
+  color: #222;
+}
+h6 {
+  font-size: 15px;
+  font-weight: 500;
+}
+.brand {
+  color: blue;
+}
+.check {
+  color: green;
+  height: 20px;
+  width: 25px;
+}
+.wish {
+  padding-top: 10px;
+  color: blue;
+}
+.total {
+  margin-left: 200px;
+}
+.Total {
+  margin-top: 5px;
+}
+.fa {
+  padding-right: 5px;
+}
+.shop {
+  padding: 5px 10px 0 0;
+}
+@media (max-width: 477px) {
+  app-button {
+    margin-top: 5px;
+    padding-right: 10px;
+  }
+  app-quantity-update {
+    padding-left: 10px;
+    padding-top: 10px;
+  }
+
+}
+@media (max-width: 768px) {
+  .single-pro-details{
+    width: 100%;
+  }
+}

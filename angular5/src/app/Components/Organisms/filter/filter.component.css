@@ -1,0 +1,41 @@
+.dot {
+  font-size: 2.5em;
+  display: none;
+}
+.filter {
+  display: flex;
+}
+mat-card {
+  width: 100%;
+}
+input {
+  display: none;
+}
+@media (max-width:600px) {
+  .dot {
+    display: block;
+  }
+  label {
+    display: flex;
+  }
+  .filter {
+    position: fixed;
+    top: 290px;
+    right: -100%;
+    background: rgba(0, 0, 0, 0.4);
+    height: calc(70vh - 100px);
+    width: 60%;
+    transition: right 0.5s linear;
+    justify-content: center;
+    box-shadow: 6px -6px 50px 10px grey;
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+  }
+  #forfilter:checked ~ .filter {
+    left: 0;
+  }
+  .color {
+    color: #0000ff;
+  }
+}

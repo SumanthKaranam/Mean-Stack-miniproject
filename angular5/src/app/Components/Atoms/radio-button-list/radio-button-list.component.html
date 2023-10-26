@@ -1,0 +1,26 @@
+<ul (click)="onClick($event)" >
+  
+  <li *ngFor="let radio of radioButton" >
+    <input
+      type="radio"
+      name="radio-Select"
+      [value]="radio.value"
+      [alt]="radio.name"
+      ngModel
+      class="form-check-input"
+    />
+    {{radio.range}}
+  </li>
+  <!-- <li>
+    <input
+      type="radio"
+      name="radio-Select"
+      value="1000"
+      ngModel
+      class="form-check-input"
+    />
+    0-1000
+  </li>-->
+</ul>
+
+ 
